@@ -1,0 +1,1002 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-13T03:23:19.610Z",
+        "line": 4,
+        "name": "Validate the Signup functioanlity",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-signup-functioanlity",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3528211216,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User have to launch the brainzo application through chrome browser using localhost:300",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 83
+                }
+              ],
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42504991,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Successfully Navigate to Home page",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_Successfully_Navigate_to_Home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 732529650,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click the Signup button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_the_Signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000375633,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the Valid EmailAddress in Text field",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.enter_the_Valid_EmailAddress_in_Text_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71475175,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click the Submit button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_the_Submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48255663,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the OTP that has been sent to Registerd Email Address",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.enter_the_OTP_that_has_been_sent_to_Registerd_Email_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82368,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click verify OTP button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_verify_OTP_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000766043,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Successfully Entered their OTP for verifciation",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_Successfully_Entered_their_OTP_for_verifciation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027firstname\u0027]\"}\n  (Session info: chrome\u003d107.0.5304.110)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027BLR1-LHP-N80955\u0027, ip: \u0027192.168.157.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.11.0-051100-generic\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.kssCR4}, goog:chromeOptions: {debuggerAddress: localhost:43483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0c657506454540d055b0de9bca3cf295\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027firstname\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)\n\tat Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_field(BrainzoDemoDef.java:74)\n\tat ✽.User have to give their First name and Last name in corressponding Text field(file:///home/dilip/eclipse-workspace/TestBrainzo/src/main/java/resources/featureFile/brainzo.feature:14)\n",
+              "duration": 28553040,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "User have to give their First name and Last name in corressponding Text field",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101908,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user have to Enter the Phone number in Phone number Text Box",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Phone_number_in_Phone_number_Text_Box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67629,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user have to Enter the Password in Password and Confirm Password Text field",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Password_in_Password_and_Confirm_Password_Text_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47675,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User have to Click the Signup button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_Click_the_Signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40537,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User Successfully navigate to Login page",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_Successfully_navigate_to_Login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:23:28.175Z",
+        "line": 21,
+        "name": "Validate the Signup functioanlity for Mentor",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-signup-functioanlity-for-mentor",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4005941488,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User have to launch the brainzo application through chrome browser using localhost:300",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 83
+                }
+              ],
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40987603,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User get Successfully Navigate to Home page",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_get_Successfully_Navigate_to_Home_pages()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 728983412,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click the Sign-up button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_the_Sign_up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000316088,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Enter the Valid Email-Address in Text field",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.enter_the_Valid_Email_Address_in_Text_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59853613,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Click the Submit  button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_the_Submit_buttons()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48051161,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Enter the OTP that has been sent to Registerd Email-Address",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.enter_the_OTP_that_has_been_sent_to_Registerd_Email_Addresss()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144703,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click verify OTP  button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_verify_OTP_buttons()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000406851,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User Successfully Entered their OTP for  verifciation",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_Successfully_Entered_their_OTP_for_verifciations()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027firstname\u0027]\"}\n  (Session info: chrome\u003d107.0.5304.110)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027BLR1-LHP-N80955\u0027, ip: \u0027192.168.157.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.11.0-051100-generic\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.6fTDUH}, goog:chromeOptions: {debuggerAddress: localhost:35607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7b16e2413d2e5c73ea711df75e7946ff\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027firstname\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)\n\tat Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_fields(BrainzoDemoDef.java:159)\n\tat ✽.User have to give their First-name and Last-name in corressponding Text field(file:///home/dilip/eclipse-workspace/TestBrainzo/src/main/java/resources/featureFile/brainzo.feature:31)\n",
+              "duration": 24405654,
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "User have to give their First-name and Last-name in corressponding Text field",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75857,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user have to Enter the Phone number in Number Text Box",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Phone_number_in_Number_Text_Box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42157,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user have to Enter the Password in Password and Confirm Password Text field.",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Password_in_Password_and_Confirm_Password_Text_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39460,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User have to Click the Signup button.",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_Click_the_Signup_buttons()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39144,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User Successfully navigate to Login page.",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_Successfully_navigate_to_Login_pages()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:23:37.099Z",
+        "line": 38,
+        "name": "Validate the working of Login Functionality of Mentor",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-working-of-login-functionality-of-mentor",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3212643953,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User have to launch the brainzo application through chrome browser via using localhost:300",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 737008967,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User have to  click the login button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_havs_to_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147412948,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User  enter valid username and valid password",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_enter_valid_username_and_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51977328,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Click login button once again",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_login_button_once_again()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164499,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User should be navigate to Add course page",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_should_be_navigate_to_Add_course_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:23:41.268Z",
+        "line": 45,
+        "name": "Validate the Add course functionality",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-add-course-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3650166964,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User have to launch the brainzo application through chrome browser via using localhost:300",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 901362373,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User successfully get login as mentor",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_successfully_get_login_as_mentor()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000431959,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User has navigate to add course page",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_has_navigate_to_add_course_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 417039787,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User have to fill the course details in corresponding text field",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_fill_the_course_details_in_corresponding_text_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100728,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Click Addcourse button",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_Addcourse_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:23:48.250Z",
+        "line": 54,
+        "name": "To validate Login functionality by giving valid credentials",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;to-validate-login-functionality-by-giving-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3349628150,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User have to Launch the Brainzo application through chrome browser via using localhost:3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 773959349,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User click the login button",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130933266,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User have to enter valid username and valid password",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_have_to_enter_valid_username_and_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52345535,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Click login button again",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_login_button_again()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105195388,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User should be in a valid credential page",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_should_be_in_a_valid_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:23:52.671Z",
+        "line": 61,
+        "name": "To validate the working of Search functionality",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;to-validate-the-working-of-search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3125144444,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User have to Launch the Brainzo application through chrome browser via using localhost:3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 974592668,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Enter in to the valid page by using valid credentials",
+            "match": {
+              "location": "Stepdef.BrainzoDef.enter_in_to_the_valid_page_by_using_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2148589993,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "Enter the course name which you want to learn",
+            "match": {
+              "location": "Stepdef.BrainzoDef.enter_the_course_name_which_you_want_to_learn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10107525298,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "Click search icon to search that course",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_search_icon_to_search_that_course()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10108519245,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "User should navigate to particular course page",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_should_navigate_to_particular_course_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:24:19.147Z",
+        "line": 69,
+        "name": "To Validate the working of Enroll functionality",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;to-validate-the-working-of-enroll-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3007033769,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User have to Launch the Brainzo application through chrome browser via using localhost:3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3109916216,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User Select the particular Course",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_select_the_particular_course()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2060487139,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User have to click enroll button",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_have_to_click_enroll_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110517,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "click Show QR from payment dialogbox",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_show_qr_from_payment_dialogbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105144659,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "User is Enrolled with selected course",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_is_enrolled_with_selected_course()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:24:27.439Z",
+        "line": 77,
+        "name": "Validate the working of Start Learning functionality",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-working-of-start-learning-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6309320194,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "User have to Launch the Brainzo application through chrome browser via using localhost:3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 932219762,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "User have to login in to application",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_have_to_login_in_to_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class\u003d\u0027MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input\u0027]\"}\n  (Session info: chrome\u003d107.0.5304.110)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027BLR1-LHP-N80955\u0027, ip: \u0027192.168.157.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.11.0-051100-generic\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.OLcd4N}, goog:chromeOptions: {debuggerAddress: localhost:44921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b2f46e3b216d46b832e850395ea4ad4f\n*** Element info: {Using\u003dxpath, value\u003d//input[@class\u003d\u0027MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)\n\tat org.base.BaseClass.fill(BaseClass.java:31)\n\tat Stepdef.BrainzoDef.select_the_course_by_click_on_the_course_which_user_wants(BrainzoDef.java:144)\n\tat ✽.Select the course by click on the course which user wants(file:///home/dilip/eclipse-workspace/TestBrainzo/src/main/java/resources/featureFile/brainzo.feature:81)\n",
+              "duration": 122064173,
+              "status": "failed"
+            },
+            "line": 81,
+            "name": "Select the course by click on the course which user wants",
+            "match": {
+              "location": "Stepdef.BrainzoDef.select_the_course_by_click_on_the_course_which_user_wants()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84925,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "Click Start Learning button",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_start_learning_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33557,
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "Click on the Video player button",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_on_the_video_player_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26127,
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "Add some comments if your user want to share their feedback",
+            "match": {
+              "location": "Stepdef.BrainzoDef.add_some_comments_if_your_user_want_to_share_their_feedback()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32587,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "Click send Button",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_send_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20879,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "Comment is Added",
+            "match": {
+              "location": "Stepdef.BrainzoDef.comment_is_added()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:24:34.815Z",
+        "line": 88,
+        "name": "Validate the My courses functionality",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-my-courses-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5164483032,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "User have to launch the brainzo application through chrome browser via using localhost:300",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1012224616,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Login as learner by providing valid credentials",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.login_as_learner_by_providing_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 279710948,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "click the dropdown menu option",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.click_the_dropdown_menu_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55129536,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "select the my courses",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.select_the_my_courses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117502402,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "courses which are enrolled by learner is displayed",
+            "match": {
+              "location": "Stepdef.BrainzoDemoDef.courses_which_are_enrolled_by_learner_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-13T03:24:41.452Z",
+        "line": 97,
+        "name": "Validate the working of Logout functionality",
+        "description": "",
+        "id": "to-validate-functionality-brainzo-application;validate-the-working-of-logout-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8200304515,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "User have to Launch the Brainzo application through chrome browser via using localhost:3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 87
+                }
+              ],
+              "location": "Stepdef.BrainzoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1324966811,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "user have to click the three dots in top right corner of course page",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_have_to_click_the_three_dots_in_top_right_corner_of_course_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91795155,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "click logout option from that dropdown",
+            "match": {
+              "location": "Stepdef.BrainzoDef.click_logout_option_from_that_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130887,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "User successfully logged out",
+            "match": {
+              "location": "Stepdef.BrainzoDef.user_successfully_logged_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate Functionality Brainzo application",
+    "description": "",
+    "id": "to-validate-functionality-brainzo-application",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/resources/featureFile/brainzo.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Brainzo</td>
+      <td>13 Nov 2022, 08:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.add_some_comments_if_your_user_want_to_share_their_feedback()</td>
+              <td>1</td>
+              <td class="duration" data-value="26127">0.000</td>
+              <td class="duration" data-value="26127">0.000</td>
+              <td class="duration" data-value="26127">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_login_button_again()</td>
+              <td>1</td>
+              <td class="duration" data-value="52345535">0.052</td>
+              <td class="duration" data-value="52345535">0.052</td>
+              <td class="duration" data-value="52345535">0.052</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_logout_option_from_that_dropdown()</td>
+              <td>1</td>
+              <td class="duration" data-value="91795155">0.091</td>
+              <td class="duration" data-value="91795155">0.091</td>
+              <td class="duration" data-value="91795155">0.091</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_on_the_video_player_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="33557">0.000</td>
+              <td class="duration" data-value="33557">0.000</td>
+              <td class="duration" data-value="33557">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_search_icon_to_search_that_course()</td>
+              <td>1</td>
+              <td class="duration" data-value="10107525298">10.107</td>
+              <td class="duration" data-value="10107525298">10.107</td>
+              <td class="duration" data-value="10107525298">10.107</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_send_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="32587">0.000</td>
+              <td class="duration" data-value="32587">0.000</td>
+              <td class="duration" data-value="32587">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_show_qr_from_payment_dialogbox()</td>
+              <td>1</td>
+              <td class="duration" data-value="110517">0.000</td>
+              <td class="duration" data-value="110517">0.000</td>
+              <td class="duration" data-value="110517">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.click_start_learning_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="84925">0.000</td>
+              <td class="duration" data-value="84925">0.000</td>
+              <td class="duration" data-value="84925">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.comment_is_added()</td>
+              <td>1</td>
+              <td class="duration" data-value="20879">0.000</td>
+              <td class="duration" data-value="20879">0.000</td>
+              <td class="duration" data-value="20879">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.enter_in_to_the_valid_page_by_using_valid_credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="974592668">0.974</td>
+              <td class="duration" data-value="974592668">0.974</td>
+              <td class="duration" data-value="974592668">0.974</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.enter_the_course_name_which_you_want_to_learn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2148589993">2.148</td>
+              <td class="duration" data-value="2148589993">2.148</td>
+              <td class="duration" data-value="2148589993">2.148</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.select_the_course_by_click_on_the_course_which_user_wants()</td>
+              <td>1</td>
+              <td class="duration" data-value="122064173">0.122</td>
+              <td class="duration" data-value="122064173">0.122</td>
+              <td class="duration" data-value="122064173">0.122</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_click_the_login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="773959349">0.773</td>
+              <td class="duration" data-value="773959349">0.773</td>
+              <td class="duration" data-value="773959349">0.773</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_have_to_click_enroll_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="2060487139">2.060</td>
+              <td class="duration" data-value="2060487139">2.060</td>
+              <td class="duration" data-value="2060487139">2.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_have_to_click_the_three_dots_in_top_right_corner_of_course_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1324966811">1.324</td>
+              <td class="duration" data-value="1324966811">1.324</td>
+              <td class="duration" data-value="1324966811">1.324</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_have_to_enter_valid_username_and_valid_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="130933266">0.130</td>
+              <td class="duration" data-value="130933266">0.130</td>
+              <td class="duration" data-value="130933266">0.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)</td>
+              <td>5</td>
+              <td class="duration" data-value="4798286214">4.798</td>
+              <td class="duration" data-value="4798286214">8.200</td>
+              <td class="duration" data-value="23991431072">23.991</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_have_to_login_in_to_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="932219762">0.932</td>
+              <td class="duration" data-value="932219762">0.932</td>
+              <td class="duration" data-value="932219762">0.932</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_is_enrolled_with_selected_course()</td>
+              <td>1</td>
+              <td class="duration" data-value="105144659">0.105</td>
+              <td class="duration" data-value="105144659">0.105</td>
+              <td class="duration" data-value="105144659">0.105</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_select_the_particular_course()</td>
+              <td>1</td>
+              <td class="duration" data-value="3109916216">3.109</td>
+              <td class="duration" data-value="3109916216">3.109</td>
+              <td class="duration" data-value="3109916216">3.109</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_should_be_in_a_valid_credential_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="105195388">0.105</td>
+              <td class="duration" data-value="105195388">0.105</td>
+              <td class="duration" data-value="105195388">0.105</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_should_navigate_to_particular_course_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="10108519245">10.108</td>
+              <td class="duration" data-value="10108519245">10.108</td>
+              <td class="duration" data-value="10108519245">10.108</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDef.user_successfully_logged_out()</td>
+              <td>1</td>
+              <td class="duration" data-value="130887">0.000</td>
+              <td class="duration" data-value="130887">0.000</td>
+              <td class="duration" data-value="130887">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_Addcourse_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="100728">0.000</td>
+              <td class="duration" data-value="100728">0.000</td>
+              <td class="duration" data-value="100728">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_login_button_once_again()</td>
+              <td>1</td>
+              <td class="duration" data-value="51977328">0.051</td>
+              <td class="duration" data-value="51977328">0.051</td>
+              <td class="duration" data-value="51977328">0.051</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_the_Sign_up_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="728983412">0.728</td>
+              <td class="duration" data-value="728983412">0.728</td>
+              <td class="duration" data-value="728983412">0.728</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_the_Signup_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="732529650">0.732</td>
+              <td class="duration" data-value="732529650">0.732</td>
+              <td class="duration" data-value="732529650">0.732</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_the_Submit_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="71475175">0.071</td>
+              <td class="duration" data-value="71475175">0.071</td>
+              <td class="duration" data-value="71475175">0.071</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_the_Submit_buttons()</td>
+              <td>1</td>
+              <td class="duration" data-value="59853613">0.059</td>
+              <td class="duration" data-value="59853613">0.059</td>
+              <td class="duration" data-value="59853613">0.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_the_dropdown_menu_option()</td>
+              <td>1</td>
+              <td class="duration" data-value="279710948">0.279</td>
+              <td class="duration" data-value="279710948">0.279</td>
+              <td class="duration" data-value="279710948">0.279</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_verify_OTP_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="82368">0.000</td>
+              <td class="duration" data-value="82368">0.000</td>
+              <td class="duration" data-value="82368">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.click_verify_OTP_buttons()</td>
+              <td>1</td>
+              <td class="duration" data-value="144703">0.000</td>
+              <td class="duration" data-value="144703">0.000</td>
+              <td class="duration" data-value="144703">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.courses_which_are_enrolled_by_learner_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="117502402">0.117</td>
+              <td class="duration" data-value="117502402">0.117</td>
+              <td class="duration" data-value="117502402">0.117</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.enter_the_OTP_that_has_been_sent_to_Registerd_Email_Address()</td>
+              <td>1</td>
+              <td class="duration" data-value="48255663">0.048</td>
+              <td class="duration" data-value="48255663">0.048</td>
+              <td class="duration" data-value="48255663">0.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.enter_the_OTP_that_has_been_sent_to_Registerd_Email_Addresss()</td>
+              <td>1</td>
+              <td class="duration" data-value="48051161">0.048</td>
+              <td class="duration" data-value="48051161">0.048</td>
+              <td class="duration" data-value="48051161">0.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.enter_the_Valid_EmailAddress_in_Text_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000375633">2.000</td>
+              <td class="duration" data-value="2000375633">2.000</td>
+              <td class="duration" data-value="2000375633">2.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.enter_the_Valid_Email_Address_in_Text_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000316088">2.000</td>
+              <td class="duration" data-value="2000316088">2.000</td>
+              <td class="duration" data-value="2000316088">2.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.login_as_learner_by_providing_valid_credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="1012224616">1.012</td>
+              <td class="duration" data-value="1012224616">1.012</td>
+              <td class="duration" data-value="1012224616">1.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.select_the_my_courses()</td>
+              <td>1</td>
+              <td class="duration" data-value="55129536">0.055</td>
+              <td class="duration" data-value="55129536">0.055</td>
+              <td class="duration" data-value="55129536">0.055</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_Successfully_Entered_their_OTP_for_verifciation()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000766043">2.000</td>
+              <td class="duration" data-value="2000766043">2.000</td>
+              <td class="duration" data-value="2000766043">2.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_Successfully_Entered_their_OTP_for_verifciations()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000406851">2.000</td>
+              <td class="duration" data-value="2000406851">2.000</td>
+              <td class="duration" data-value="2000406851">2.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_Successfully_Navigate_to_Home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="42504991">0.042</td>
+              <td class="duration" data-value="42504991">0.042</td>
+              <td class="duration" data-value="42504991">0.042</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_Successfully_navigate_to_Login_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="40537">0.000</td>
+              <td class="duration" data-value="40537">0.000</td>
+              <td class="duration" data-value="40537">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_Successfully_navigate_to_Login_pages()</td>
+              <td>1</td>
+              <td class="duration" data-value="39144">0.000</td>
+              <td class="duration" data-value="39144">0.000</td>
+              <td class="duration" data-value="39144">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_enter_valid_username_and_valid_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="147412948">0.147</td>
+              <td class="duration" data-value="147412948">0.147</td>
+              <td class="duration" data-value="147412948">0.147</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_get_Successfully_Navigate_to_Home_pages()</td>
+              <td>1</td>
+              <td class="duration" data-value="40987603">0.040</td>
+              <td class="duration" data-value="40987603">0.040</td>
+              <td class="duration" data-value="40987603">0.040</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_has_navigate_to_add_course_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2000431959">2.000</td>
+              <td class="duration" data-value="2000431959">2.000</td>
+              <td class="duration" data-value="2000431959">2.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_Click_the_Signup_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="47675">0.000</td>
+              <td class="duration" data-value="47675">0.000</td>
+              <td class="duration" data-value="47675">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_Click_the_Signup_buttons()</td>
+              <td>1</td>
+              <td class="duration" data-value="39460">0.000</td>
+              <td class="duration" data-value="39460">0.000</td>
+              <td class="duration" data-value="39460">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Password_in_Password_and_Confirm_Password_Text_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="67629">0.000</td>
+              <td class="duration" data-value="67629">0.000</td>
+              <td class="duration" data-value="67629">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Password_in_Password_and_Confirm_Password_Text_fields()</td>
+              <td>1</td>
+              <td class="duration" data-value="42157">0.000</td>
+              <td class="duration" data-value="42157">0.000</td>
+              <td class="duration" data-value="42157">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Phone_number_in_Number_Text_Box()</td>
+              <td>1</td>
+              <td class="duration" data-value="75857">0.000</td>
+              <td class="duration" data-value="75857">0.000</td>
+              <td class="duration" data-value="75857">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_Enter_the_Phone_number_in_Phone_number_Text_Box()</td>
+              <td>1</td>
+              <td class="duration" data-value="101908">0.000</td>
+              <td class="duration" data-value="101908">0.000</td>
+              <td class="duration" data-value="101908">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_fill_the_course_details_in_corresponding_text_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="417039787">0.417</td>
+              <td class="duration" data-value="417039787">0.417</td>
+              <td class="duration" data-value="417039787">0.417</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="28553040">0.028</td>
+              <td class="duration" data-value="28553040">0.028</td>
+              <td class="duration" data-value="28553040">0.028</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_fields()</td>
+              <td>1</td>
+              <td class="duration" data-value="24405654">0.024</td>
+              <td class="duration" data-value="24405654">0.024</td>
+              <td class="duration" data-value="24405654">0.024</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_using_localhost(java.lang.Integer)</td>
+              <td>2</td>
+              <td class="duration" data-value="3767076352">3.767</td>
+              <td class="duration" data-value="3767076352">4.005</td>
+              <td class="duration" data-value="7534152704">7.534</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_have_to_launch_the_brainzo_application_through_chrome_browser_via_using_localhost(java.lang.Integer)</td>
+              <td>3</td>
+              <td class="duration" data-value="4009097983">4.009</td>
+              <td class="duration" data-value="4009097983">5.164</td>
+              <td class="duration" data-value="12027293949">12.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_havs_to_click_the_login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="737008967">0.737</td>
+              <td class="duration" data-value="737008967">0.737</td>
+              <td class="duration" data-value="737008967">0.737</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_should_be_navigate_to_Add_course_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="164499">0.000</td>
+              <td class="duration" data-value="164499">0.000</td>
+              <td class="duration" data-value="164499">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Stepdef.BrainzoDemoDef.user_successfully_get_login_as_mentor()</td>
+              <td>1</td>
+              <td class="duration" data-value="901362373">0.901</td>
+              <td class="duration" data-value="901362373">0.901</td>
+              <td class="duration" data-value="901362373">0.901</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>61</td>
+            <td>68</td>
+            <td class="duration">1.341</td>
+            <td class="duration">23.991</td>
+            <td class="duration">1:31.249</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

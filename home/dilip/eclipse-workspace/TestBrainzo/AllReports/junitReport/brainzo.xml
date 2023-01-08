@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="91.657">
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the Signup functioanlity" time="8.534">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='firstname']&quot;}&#10;  (Session info: chrome=107.0.5304.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'BLR1-LHP-N80955', ip: '192.168.157.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-051100-generic', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.kssCR4}, goog:chromeOptions: {debuggerAddress: localhost:43483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0c657506454540d055b0de9bca3cf295&#10;*** Element info: {Using=xpath, value=//input[@name='firstname']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User have to launch the brainzo application through chrome browser using localhost:300.passed
+When User Successfully Navigate to Home page................................passed
+And Click the Signup button.................................................passed
+And Enter the Valid EmailAddress in Text field..............................passed
+And Click the Submit button.................................................passed
+And Enter the OTP that has been sent to Registerd Email Address.............passed
+And Click verify OTP button.................................................passed
+When User Successfully Entered their OTP for verifciation...................passed
+And User have to give their First name and Last name in corressponding Text field.failed
+And user have to Enter the Phone number in Phone number Text Box............skipped
+And user have to Enter the Password in Password and Confirm Password Text field.skipped
+And User have to Click the Signup button....................................skipped
+Then User Successfully navigate to Login page...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLR1-LHP-N80955', ip: '192.168.157.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-051100-generic', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.kssCR4}, goog:chromeOptions: {debuggerAddress: localhost:43483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c657506454540d055b0de9bca3cf295
+*** Element info: {Using=xpath, value=//input[@name='firstname']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_field(BrainzoDemoDef.java:74)
+	at ✽.User have to give their First name and Last name in corressponding Text field(file:///home/dilip/eclipse-workspace/TestBrainzo/src/main/java/resources/featureFile/brainzo.feature:14)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the Signup functioanlity for Mentor" time="8.915">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='firstname']&quot;}&#10;  (Session info: chrome=107.0.5304.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'BLR1-LHP-N80955', ip: '192.168.157.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-051100-generic', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.6fTDUH}, goog:chromeOptions: {debuggerAddress: localhost:35607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7b16e2413d2e5c73ea711df75e7946ff&#10;*** Element info: {Using=xpath, value=//input[@name='firstname']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User have to launch the brainzo application through chrome browser using localhost:300.passed
+When User get Successfully Navigate to Home page............................passed
+And Click the Sign-up button................................................passed
+And Enter the Valid Email-Address in Text field.............................passed
+And Click the Submit  button................................................passed
+And Enter the OTP that has been sent to Registerd Email-Address.............passed
+And Click verify OTP  button................................................passed
+When User Successfully Entered their OTP for  verifciation..................passed
+And User have to give their First-name and Last-name in corressponding Text field.failed
+And user have to Enter the Phone number in Number Text Box..................skipped
+And user have to Enter the Password in Password and Confirm Password Text field..skipped
+And User have to Click the Signup button....................................skipped
+Then User Successfully navigate to Login page...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLR1-LHP-N80955', ip: '192.168.157.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-051100-generic', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.6fTDUH}, goog:chromeOptions: {debuggerAddress: localhost:35607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b16e2413d2e5c73ea711df75e7946ff
+*** Element info: {Using=xpath, value=//input[@name='firstname']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at Stepdef.BrainzoDemoDef.user_have_to_give_their_First_name_and_Last_name_in_corressponding_Text_fields(BrainzoDemoDef.java:159)
+	at ✽.User have to give their First-name and Last-name in corressponding Text field(file:///home/dilip/eclipse-workspace/TestBrainzo/src/main/java/resources/featureFile/brainzo.feature:31)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the working of Login Functionality of Mentor" time="4.15">
+        <system-out><![CDATA[Given User have to launch the brainzo application through chrome browser via using localhost:300.passed
+When User have to  click the login button...................................passed
+And User  enter valid username and valid password...........................passed
+And Click login button once again...........................................passed
+Then User should be navigate to Add course page.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the Add course functionality" time="6.971">
+        <system-out><![CDATA[Given User have to launch the brainzo application through chrome browser via using localhost:300.passed
+When User successfully get login as mentor..................................passed
+And User has navigate to add course page....................................passed
+And User have to fill the course details in corresponding text field........passed
+Then Click Addcourse button.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="To validate Login functionality by giving valid credentials" time="4.413">
+        <system-out><![CDATA[Given User have to Launch the Brainzo application through chrome browser via using localhost:3000.passed
+When User click the login button............................................passed
+And User have to enter valid username and valid password....................passed
+And Click login button again................................................passed
+Then User should be in a valid credential page..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="To validate the working of Search functionality" time="26.468">
+        <system-out><![CDATA[Given User have to Launch the Brainzo application through chrome browser via using localhost:3000.passed
+When Enter in to the valid page by using valid credentials..................passed
+And Enter the course name which you want to learn...........................passed
+And Click search icon to search that course.................................passed
+Then User should navigate to particular course page.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="To Validate the working of Enroll functionality" time="8.284">
+        <system-out><![CDATA[Given User have to Launch the Brainzo application through chrome browser via using localhost:3000.passed
+When User Select the particular Course......................................passed
+And User have to click enroll button........................................passed
+And click Show QR from payment dialogbox....................................passed
+Then User is Enrolled with selected course..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the working of Start Learning functionality" time="7.366">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input']&quot;}&#10;  (Session info: chrome=107.0.5304.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'BLR1-LHP-N80955', ip: '192.168.157.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-051100-generic', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.OLcd4N}, goog:chromeOptions: {debuggerAddress: localhost:44921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b2f46e3b216d46b832e850395ea4ad4f&#10;*** Element info: {Using=xpath, value=//input[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User have to Launch the Brainzo application through chrome browser via using localhost:3000.passed
+When User have to login in to application...................................passed
+And Select the course by click on the course which user wants...............failed
+And Click Start Learning button.............................................skipped
+And Click on the Video player button........................................skipped
+And Add some comments if your user want to share their feedback.............skipped
+And Click send Button.......................................................skipped
+Then Comment is Added.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLR1-LHP-N80955', ip: '192.168.157.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-051100-generic', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.OLcd4N}, goog:chromeOptions: {debuggerAddress: localhost:44921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2f46e3b216d46b832e850395ea4ad4f
+*** Element info: {Using=xpath, value=//input[@class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at org.base.BaseClass.fill(BaseClass.java:31)
+	at Stepdef.BrainzoDef.select_the_course_by_click_on_the_course_which_user_wants(BrainzoDef.java:144)
+	at ✽.Select the course by click on the course which user wants(file:///home/dilip/eclipse-workspace/TestBrainzo/src/main/java/resources/featureFile/brainzo.feature:81)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the My courses functionality" time="6.631">
+        <system-out><![CDATA[Given User have to launch the brainzo application through chrome browser via using localhost:300.passed
+When Login as learner by providing valid credentials........................passed
+And click the dropdown menu option..........................................passed
+And select the my courses...................................................passed
+Then courses which are enrolled by learner is displayed.....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Functionality Brainzo application" name="Validate the working of Logout functionality" time="9.618">
+        <system-out><![CDATA[Given User have to Launch the Brainzo application through chrome browser via using localhost:3000.passed
+When user have to click the three dots in top right corner of course page...passed
+And click logout option from that dropdown..................................passed
+Then User successfully logged out...........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
